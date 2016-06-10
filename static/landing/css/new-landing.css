@@ -132,7 +132,7 @@ iframe {
 
 .home-bg {
 	padding: 0px;
-	background-image: url('/img/home.png');
+	background-image: url('../img/home.png');
 	background-position-y: top;
 	background-position-x: center;
 	background-size: cover;
@@ -140,7 +140,7 @@ iframe {
 
 .traveler-bg {
 	padding: 0px;
-	background-image: url('img/traveler.jpg');
+	background-image: url('../img/traveler.jpg');
 	background-position-y: top;
 	background-position-x: center;
 	background-size: cover;

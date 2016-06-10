@@ -19,9 +19,46 @@ body {
     font-stretch: normal;
 }
 
+.wrapper {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+.item {
+	/*height: 100%;*/
+	width: 100%;
+	position: relative;
+}
+
+.container--btn--social {
+	width: 120px;
+}
+
+.container--btn--home {
+	margin: 18px;
+	width: 100%;
+	text-align: right;
+}
+
+.container--text {
+	height: 70vh;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container--text--content {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+
 .col--full-height {
-	height: 36vh;
-	padding: 30px 0px;
+	height: 100%;
+}
+
+.col--full-height--home {
+	height: 100%;
 }
 
 .col--full-text {
@@ -59,12 +96,47 @@ body {
 	margin-top: 8%;
 }
 
+.menu-home-nav {
+	margin: 0 3%;
+	padding-top: 3%;
+	position: relative;
+	z-index: 2;
+}
+
 .menu-nav a {
 	padding-left: 0;
     padding-right: 0;
 }
 
+/* Video */
+
+.embed-container {
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+}
+
+.embed-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+iframe {
+	display: none;
+}
+
 /* Main images */
+
+.home-bg {
+	padding: 0px;
+	background-image: url('../img/home.png');
+	background-position-y: top;
+	background-position-x: center;
+	background-size: cover;
+}
 
 .traveler-bg {
 	padding: 0px;
@@ -72,7 +144,6 @@ body {
 	background-position-y: top;
 	background-position-x: center;
 	background-size: cover;
-	padding-bottom: 49%;
 }
 
 .explorer-bg {
@@ -81,7 +152,6 @@ body {
 	background-position-y: top;
 	background-position-x: center;
 	background-size: cover;
-	padding-bottom: 49%;
 }
 
 .adventure-bg {
@@ -90,7 +160,6 @@ body {
 	background-position-y: top;
 	background-position-x: center;
 	background-size: cover;
-	padding-bottom: 49%;
 }
 
 .talent-bg {
@@ -99,7 +168,6 @@ body {
 	background-position-y: top;
 	background-position-x: center;
 	background-size: cover;
-	padding-bottom: 49%;
 	position: relative;
 }
 
@@ -109,7 +177,6 @@ body {
 	background-position-y: top;
 	background-position-x: center;
 	background-size: cover;
-	padding-bottom: 49%;
 }
 
 .dream-bg {
@@ -118,7 +185,6 @@ body {
 	background-position-y: top;
 	background-position-x: center;
 	background-size: cover;
-	padding-bottom: 49%;
 }
 
 .inner-bg {
@@ -126,6 +192,30 @@ body {
 	background-color: rgba(0, 0, 0, 0.2);
 	width: 100%;
 	height: 100%;
+}
+
+.inner-thanks-bg {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.inner-home-bg {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+}
+
+.thanksfull-bg {
+	padding: 0px;
+	background-image: url('../img/thanksfull.jpg');
+	background-position-y: top;
+	background-position-x: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .logo-manki {
@@ -136,6 +226,14 @@ body {
     left: 50%;
 }
 
+.logo-manki-home {
+	position: absolute;
+    width: 30%;
+    padding: 0;
+    height: 10vh;
+	left: 10%;
+}
+
 .image--width {
 	width: 84px;
 	height: 84px;
@@ -144,8 +242,15 @@ body {
 /* Title */
 
 .main-subtitle {
+	font-size: 18px !important;
 	margin-top: 20px;
 	margin-bottom: 66px;
+	font-weight: 400 !important;
+}
+
+.main-title-guias {
+	margin: 0px;
+	float: left;
 }
 
 /* Text general */
@@ -175,6 +280,10 @@ a[href="#"] {
 	border-bottom: 5px solid #fff;
 }
 
+p {
+	color: #000;
+}
+
 .text-subscribe {
 	width: 40%;
 	margin: 20px auto;
@@ -182,6 +291,10 @@ a[href="#"] {
 
 .text-white {
 	color: #fff;
+}
+
+.mail-link {
+	color: #ff5628 !important;
 }
 
 /* Font text */
@@ -217,6 +330,33 @@ a[href="#"] {
 	margin-top: 56px;
 }
 
+.btn--facebook,
+.btn--facebook:hover,
+.btn--facebook:active,
+.btn--facebook:focus {
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	background-color: #3B5998;
+	color: #fff;
+	text-align: center;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.btn--medium,
+.btn--medium:hover,
+.btn--medium:active,
+.btn--medium:focus {
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	background-color: #00AB6C;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
 .btn-default--traveler,
 .btn-default--traveler:hover,
 .btn-default--traveler:active,
@@ -238,17 +378,62 @@ a[href="#"] {
 }
 
 .btn--hover:hover {
-	-moz-transform: scale(1.01);
-	-webkit-transform: scale(1.01);
-	-o-transform: scale(1.01);
-	-ms-transform: scale(1.01);
-	transform: scale(1.01);
+	-moz-transform: scale(1.09);
+	-webkit-transform: scale(1.09);
+	-o-transform: scale(1.09);
+	-ms-transform: scale(1.09);
+	transform: scale(1.09);
 }
 
 .btn-default--traveler--variant,
 .btn-default--traveler--variant:hover,
 .btn-default--traveler--variant:active,
 .btn-default--traveler--variant:focus {
+	background-color: #66d1bc;
+}
+
+.btn-transparent,
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent:focus {
+	background-color: transparent;
+	border: 1px solid #ff5628;
+	border-radius: 5px;
+	color: #ff5628;
+	text-transform: none;
+	margin-top: 10px;
+}
+
+.btn-radius,
+.btn-radius:hover,
+.btn-radius:active,
+.btn-radius:focus {
+	border-radius: 5px;
+	border-radius: 5px;
+    text-transform: none;
+    color: white;
+    width: 30%;
+    margin: 0 5px;
+    min-height: 20px;
+    line-height: 2;
+    cursor: pointer;
+    text-align: center;
+    padding: 0px;
+    font-size: 14px !important;
+}
+
+.btn--color,
+.btn--color:hover,
+.btn--color:active,
+.btn--color:focus {
+	background-color: #ff5628;
+	outline: none;
+}
+
+.btn--color--variant,
+.btn--color--variant:hover,
+.btn--color--variant:focus,
+.btn--color--variant:active {
 	background-color: #66d1bc;
 }
 
@@ -265,14 +450,14 @@ a[href="#"] {
 }
 
 .input {
-	width: 40%;
+	width: auto;
 	margin: 0 auto 10px;
 	position: relative;
 }
 
 .input--guias {
 	margin: 0;
-	width: 100%;
+	width: 100% !important;
 }
 
 .input--block-end {
@@ -286,11 +471,11 @@ a[href="#"] {
 }
 
 .footer-h1 {
-	font-size: 14px;
-	font-weight: 400;
-	font-style: normal;
-	display: inline-block;
-	margin: 0px;
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	font-style: normal !important;
+	display: inline-block !important;
+	margin: 0px !important;
 }
 
 .form-control,
@@ -306,9 +491,27 @@ a[href="#"] {
 }
 
 .form-control--guias {
-	height: 40px;
-	width: 100%;
+	height: 40px !important;
+	width: 100% !important;
 }
+
+/* Redes */
+
+.facebook {
+	background: url('../img/icon-facebook.png') no-repeat center;
+	height: 83px;
+	width: 83px;
+	border: none;
+}
+
+.medium {
+  	background: url('../img/icon-medium.png') no-repeat center;
+  	height: 83px;
+  	width: 83px;
+  	border: none;
+}
+
+/* Icon */
 
 .icon {
 	color: #ff5628;
@@ -389,13 +592,63 @@ a[href="#"] {
 
 /* Utils */
 
+.width-lg {
+	width: 80%;
+}
+
 .display-table {
 	display: table;
+}
+
+.inline-block {
+	display: inline-block;
 }
 
 .vertical-align {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.padding-0 {
+	padding: 0px;
+}
+
+.padding-left {
+	padding-left: 10px;
+}
+
+.margin-y-0 {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.margin-y-md {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.margin-auto {
+	margin: 0 auto;
+}
+
+.margin-t-0 {
+	margin-top: 0px !important;
+}
+
+.margin-b-0 {
+	margin-bottom: 0px !important;
+}
+
+.margin-b-md {
+	margin-bottom: 40px !important;
+}
+
+.margin-right {
+	margin-right: 20px !important;
+}
+
+.float-left {
+	float: left;
 }
 
 /* Media query */
@@ -407,10 +660,6 @@ a[href="#"] {
 
 	.btn-default {
 		font-size: 21px !important;
-	}
-
-	.col--full-height {
-		height: 100vh;
 	}
 
 	h1, .h1 {
@@ -425,18 +674,35 @@ a[href="#"] {
 	.text-oswald-regular {
 		font-size: 21px !important;
 	}
+
+	iframe {
+		display: block;
+	}
+
+	.btn-radius,
+	.btn-radius:hover,
+	.btn-radius:focus,
+	.btn-radius:active {
+		width: 12%;
+		font-size: inherit !important;
+	}
+
+	.input {
+		width: 40%;
+	}
 }
 
 @media (min-width: 992px) {
-	.col--full-height {
-		height: 102vh;
+	.btn-radius,
+	.btn-radius:hover,
+	.btn-radius:focus,
+	.btn-radius:active {
+		width: 10%;
 	}
+}
 
-	.index_guias .col--full-height {
-		height: 108vh;
-	}
-
-	h1, .h1 {
-		font-size: 72px;
+@media (min-width: 1190px) {
+	.logo-manki-home {
+		left: -6%;
 	}
 }
