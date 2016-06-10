@@ -1,3 +1,4 @@
+{%  load static %}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -8,7 +9,6 @@
   ga('send', 'pageview');
 
 </script>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,38 +21,38 @@
     <meta name="keywords" content="manki, experiencias, experiencias locales, que hacer en, que hacer en la cuidad, vivir experiencias, hacer amigos, conocer nuevas personas, conocer la ciudad" />
     <meta name="author" content="Arelis Chicchón" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="favicon/manifest.json">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'landing/favicon/apple-touch-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'landing/favicon/apple-touch-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'landing/favicon/apple-touch-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'landing/favicon/apple-touch-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'landing/favicon/apple-touch-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'landing/favicon/apple-touch-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'landing/favicon/apple-touch-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'landing/favicon/apple-touch-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'landing/favicon/apple-touch-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'landing/favicon/favicon-32x32.png' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static 'landing/favicon/android-chrome-192x192.png' %}" sizes="192x192">
+    <link rel="icon" type="image/png" href="{% static 'landing/favicon/favicon-96x96.png' %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% static 'landing/favicon/favicon-16x16.png' %}" sizes="16x16">
+    <link rel="manifest" href="{% static 'landing/favicon/manifest.json' %}">
+    <link rel="mask-icon" href="{% static 'landing/favicon/safari-pinned-tab.svg' %}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="{% static 'landing/favicon/mstile-144x144.png' %}">
     <meta name="theme-color" content="#ffffff">
 
 	<title>Manki</title>
 
 	<!-- Bootstrap-->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="{% static 'landing/css/bootstrap.css' %}" rel="stylesheet">
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'landing/fonts/font-awesome/css/font-awesome.min.css' %}">
     
     <!-- Custom CSS -->
-    <link href="css/new-landing.css" rel="stylesheet">
+    <link href="{% static 'landing/css/new-landing.css' %}" rel="stylesheet">
 
 	<!-- Block Scroll CSS -->
-    <link rel="stylesheet" type="text/css" href="css/blockScroll.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'landing/css/blockScroll.css' %}">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,12 +83,12 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col--full-height padding-0 traveler-bg">
 					<div class="row menu-nav">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<object data="img/logo-de-manki.svg" type="image/svg+xml" class="logo-manki" alt="Logo de Manki"></object>
+							<object data="{% static 'landing/img/logo-de-manki.svg' %}" type="image/svg+xml" class="logo-manki" alt="Logo de Manki"></object>
 						</div>
 						<a class="col-lg-2 col-md-3 col-sm-2 col-xs-3 active text-center" href="#">
 							<h1 class="text-oswald-regular">Viajeros</h1>
 						</a>
-						<a class="col-lg-2 col-md-3 col-sm-2 col-xs-3 text-center" href="guias.html">
+						<a class="col-lg-2 col-md-3 col-sm-2 col-xs-3 text-center" href="/landing/guias">
 							<h1 class="text-oswald-regular">Guías</h1>
 						</a>
 					</div>
@@ -157,7 +157,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col--full-height col--full-block display-table text-center">
 					<div class="vertical-align">
-						<img src="img/world.png" alt="Sé un viajero Manki" class="image--width hidden-xs">
+						<img src="{% static 'landing/img/world.png' %}" alt="Sé un viajero Manki" class="image--width hidden-xs">
 						<h2 class="h1 main-title">¡Sé un viajero Manki!</h2>
 						<p class="text-subscribe">Nuestra comunidad está creciendo y desarrollándose, y muy pronto lanzaremos la plataforma. Si quieres ser uno de los primero en probarla, inscríbete aquí:</p>
 						<form class="formanki traveler" action="https://formspree.io/info@mankiapp.com" method="POST">
@@ -191,25 +191,13 @@
 	</div>
 
 	<!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="{% static 'landing/js/jquery.js' %}"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'landing/js/bootstrap.min.js' %}"></script>
     <!-- Block Scroll -->
 	<!-- <script src="js/blockScroll.js"></script> -->
 	<!-- Parallax Scroll -->
-	<script src="js/parallax.js"></script>
-	<!-- Firebase -->
-  	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-    <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBnSM4GxKgMgvn6EzMcqsHahu6BD683ujQ",
-      authDomain: "manki-platform.firebaseapp.com",
-      databaseURL: "https://manki-platform.firebaseio.com",
-      storageBucket: "manki-platform.appspot.com",
-    };
-    firebase.initializeApp(config);
-    </script>    
+	<script src="{% static 'landing/js/parallax.js' %}"></script>
     <script>
     $(function() {
       $('a[href*="#SeUnViajero"]:not([href="#"])').click(function() {
