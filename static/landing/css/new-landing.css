@@ -314,7 +314,7 @@ p {
 }
 
 .text-oswald-regular {
-	font-family: 'oswaldregular';
+	/*font-family: 'oswaldregular'; */
 	font-size: 11px !important;
 	text-transform: uppercase;
 	color: #fff;
@@ -323,7 +323,7 @@ p {
 /* Buttons */
 
 .btn-default {
-	font-family: 'oswaldregular';
+	/*font-family: 'oswaldregular';*/
 	font-size: 11px !important;
 	text-transform: uppercase;
 	padding: 10px;
@@ -579,7 +579,7 @@ p {
 }
 
 @font-face {
-    font-family: 'oswaldregular';
+    /*font-family: 'oswaldregular';*/
     src: url('../fonts/oswald-regular-webfont.eot');
     src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
