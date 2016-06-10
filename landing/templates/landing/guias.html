@@ -158,6 +158,8 @@
 		<!-- Full block -->
 
 		<div class="item item-slide-4 item-slide--form" id="SeUnGuia">
+			<form action="/recluit/join" method="POST">
+				{% csrf_token %}
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col--full-height col--full-block display-table text-center">
 					<div class="vertical-align">
@@ -197,7 +199,7 @@
 								</p>
 							</div>
 							<div class="col-sm-12 col-md-6">
-								<textarea name="desc" rows="6" cols="4" placeholder="Ej: La caminata costera es un paseo por los malecones más emblemáticos de la costa verde, tendremos vistas y paisajes únicos y disfrutaremos de unos de los mejores atardeceres de lima." class="form-control"></textarea>
+								<textarea name="about" rows="6" cols="4" placeholder="Ej: La caminata costera es un paseo por los malecones más emblemáticos de la costa verde, tendremos vistas y paisajes únicos y disfrutaremos de unos de los mejores atardeceres de lima." class="form-control"></textarea>
 							</div>
 						</div>
 						<div class="row row--margin">
@@ -250,6 +252,7 @@
 					</div>
 				</div>
 			</div>
+			</form>
 		</div>
 	</div>
 

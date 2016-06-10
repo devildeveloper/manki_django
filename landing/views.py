@@ -18,5 +18,4 @@ def landing_out(request):
     template = loader.get_template('landing/landing-out.html')
     return HttpResponse(template.render(request))
 def viajeros(request):
-    template = loader.get_template('landing/viajeros.html')
-    return HttpResponse(template.render(request))
+    return render(request,'landing/viajeros.html')
