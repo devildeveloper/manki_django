@@ -8,7 +8,6 @@ from .models import Schema
 # Create your views here.
 def recluit(request):
     if request.method == 'POST':
-        city = request.POST.get('city')
         experience_about = request.POST.get('desc')
         experience_type  = request.POST.get('about')
         recluit_motive   = request.POST.get('motive')
@@ -18,7 +17,7 @@ def recluit(request):
 
         response_data = {}
 
-        schema = Schema(experience_type=experience_type, city = city,experience_about=experience_about,recluit_motive=recluit_motive,recluit_name=recluit_name,recluit_email=recluit_email,recluit_phone=recluit_phone)
+        schema = Schema(experience_type=experience_type,experience_about=experience_about,recluit_motive=recluit_motive,recluit_name=recluit_name,recluit_email=recluit_email,recluit_phone=recluit_phone)
         schema.save()
         
         return redirect('/landing/gracias')

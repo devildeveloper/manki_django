@@ -9,7 +9,6 @@ class Schema(models.Model):
 #    motive = models.ForeignKey(Question, on_delete=models.CASCADE)
     activity_type = models.CharField(max_length=2,help_text="can be Explorar,Enseñar,Entretener")
     experience_type = models.CharField(max_length=100,help_text="what kind of experience would you like to guide.")
-    city =models.CharField(max_length=100,help_text="where experience will be held ?")
     experience_about= models.CharField(max_length=200,help_text="what about the experience ?")
     recluit_motive = models.CharField(max_length=200,help_text="motive to be part of manki")
     recluit_name   = models.CharField(max_length=200,help_text="your name")
