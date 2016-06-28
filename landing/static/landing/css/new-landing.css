@@ -136,7 +136,7 @@ body {
 	height: 100vh;
 }
 
-.embed-container video {
+.embed-container iframe {
 	background-size: cover;
     bottom: 0;
     height: auto;
@@ -147,7 +147,7 @@ body {
     width: auto;
 }
 
-video {
+iframe {
 	display: none;
 }
 
@@ -816,7 +816,7 @@ p {
 		font-size: 21px !important;
 	}
 
-	video {
+	iframe {
 		display: block;
 	}
 
